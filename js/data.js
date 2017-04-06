@@ -266,75 +266,75 @@ var teamOwners = {
         price: .5
     }, {
         name: "Murali Vijay",
-        owner: "Viany",
+        owner: "Vinay",
         price: 2.4
     }, {
         name: "Saurabh Tiwary",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1.4
     }, {
         name: "Sachin Baby",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1.3
     }, {
         name: "Ashok Dinda",
-        owner: "Viany",
+        owner: "Vinay",
         price: .9
     }, {
         name: "Varun Aaron",
-        owner: "Viany",
+        owner: "Vinay",
         price: 2
     }, {
         name: "Abhimanyu Mithun",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1.2
     }, {
         name: "Sanju Samson",
-        owner: "Viany",
+        owner: "Vinay",
         price: 4.2
     }, {
         name: "Iqbal Abdullah",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1.6
     }, {
         name: "R Ashwin",
-        owner: "Viany",
+        owner: "Vinay",
         price: 8
     }, {
         name: "Chris Gayle",
-        owner: "Viany",
+        owner: "Vinay",
         price: 9
     }, {
         name: "Glenn Maxwell",
-        owner: "Viany",
+        owner: "Vinay",
         price: 6
     }, {
         name: "Steven Smith",
-        owner: "Viany",
+        owner: "Vinay",
         price: 9
     }, {
         name: "Trent Boult",
-        owner: "Viany",
+        owner: "Vinay",
         price: 5.5
     }, {
         name: "Ben Stokes",
-        owner: "Viany",
+        owner: "Vinay",
         price: 5
     }, {
         name: "Adam Milne",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1
     }, {
         name: "Darren Sammy",
-        owner: "Viany",
+        owner: "Vinay",
         price: 1
     }, {
         name: "Pravin Tambe",
-        owner: "Viany",
+        owner: "Vinay",
         price: .5
     }, {
         name: "Zaheer Khan",
-        owner: "Viany",
+        owner: "Vinay",
         price: ""
     }, {
         name: "Gautam Gambhir",
