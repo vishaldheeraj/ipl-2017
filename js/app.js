@@ -6,10 +6,12 @@ function init() {
     var searchI = document.getElementById('searchI'),
         searchDL = document.getElementById('searchDL'),
         searchB = document.getElementById('searchB'),
-        resultD = document.getElementById('result');
+        resultD = document.getElementById('result'),
+        ownersList = document.getElementById('teamOwners');
 
     setOnKeyforSearch(searchI, searchDL);
     setOnClickforSearch(searchB, searchI, resultD);
+    showOwners(ownersList)
 
 }
 
@@ -77,4 +79,29 @@ function showPlayerDetails(playerDetails) {
         playerDetails.name + '</td><td>' +
         playerDetails.owner + '</td><td>' +
         playerDetails.price + '</td></tr>';
+}
+
+function showOwners(ownersList) {
+    var html = '', key;
+    for(key in teamOwners) {
+        html += '<li onclick=showTeam("' + key + '")>'+ key +'</li>'
+    }
+    ownersList.innerHTML = html;
+}
+
+function showTeam(owner) {
+    var teamList = document.getElementById("teamList");
+    teamList.innerHTML = '';
+    var team = players.filter(function(d) {
+        return d.owner == owner;
+    });
+    console.log(team);
+    var teamTable = '<table><thead><tr><th>Name</th><th>Price(cr)</th></tr></thead>', key;
+    team.forEach(function(d) {
+        teamTable += '<tr>';
+        teamTable += '<td>'+ d.name +'</td>';
+        teamTable += '<td>'+ d.price +'</td>';
+        teamTable += '</tr>';
+    });
+    teamList.innerHTML = teamTable;
 }
