@@ -1,14 +1,26 @@
 body {
     display: block;
     margin: 0px;
+    background-image: url("../images/bg.jpg");
+    color: beige;
 }
 
-#teamBanner{
+.hidediv {
+    display: none;
+}
+
+.showdiv {
+    display: block;
+}
+
+#teamBanner {
     height: 150px;
     width: 60%
 }
 
-table, td, th {    
+table,
+td,
+th {
     border: 1px solid #ddd;
     text-align: left;
 }
@@ -18,11 +30,12 @@ table {
     width: 60%;
 }
 
-th, td {
+th,
+td {
     padding: 15px;
 }
 
-#result{
+#result {
     padding-top: 10px;
 }
 
