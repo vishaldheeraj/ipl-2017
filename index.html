@@ -1,17 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>IPL 2017</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet">
 </head>
+
 <body>
     <center>
         <img id="teamBanner" alt="Team Banner" />
         <div id="searchBar">
             <div id="player">
-                <label for="search">Search Owner</label>
+                <label for="search">Show</label>
+                <select id="searchS">
+                    <option value="owner">Owner</option>
+                    <option value="team">Team</option>
+                    <option value="player">Player</option>
+                </select>
                 <input id="searchI" list="searchDL">
                 <datalist id="searchDL">
                 </datalist>
@@ -21,16 +28,16 @@
         <div id="result">
         </div>
     </center>
-    <center>
-        <div>Team</div>
-        <ul id="teamOwners">
-
-        </ul>
-        <div id="teamList">
-
-        </div>
-    </center>
     <script src="js/data.js"></script>
+    <script src="js/callbacks.js"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/squads.js?callback=onSquads"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/mostRuns.js?callback=onMostRuns"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/mostSixes.js?callback=onMostSixes"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/bestBattingStrikeRate.js?callback=onBestBattingStrikeRate"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/mostWickets.js?callback=onMostWickets"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/bestBowlingAverage.js?callback=onBestBowlingAverage"></script>
+    <script src="http://datacdn.iplt20.com/dynamic/data/core/cricket/2012/ipl2017/stats/player/full/bestBowlingEconomy.js?callback=onBestEconomy"></script>
     <script src="js/app.js"></script>
 </body>
+
 </html>
